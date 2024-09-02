@@ -1,0 +1,205 @@
+.midia-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.midia-container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.midia-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.midia-left {
+  flex: 1;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+
+  img {
+    max-width: 45px;
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+}
+
+.midia-button {
+  background-color: #00B84F;
+  color: white;
+  padding: 1.6rem 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 170%;
+  animation: zoom-in-zoom-out 2s ease-out infinite;
+
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.05, 1.05);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+
+.midia-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-text {
+    color: #fff;
+    font-weight: 200;
+
+    span {
+      color: #E79925;
+    }
+  }
+}
+
+.midia-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 4rem 0;
+}
+
+.bottom-left,
+.bottom-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-left img,
+.bottom-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+.guru-title {
+  font-size: 32px;
+  max-width: 55%;
+  margin: 1rem auto;
+  text-align: center;
+  color: #fff;
+}
+
+.guru-text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  max-width: 50%;
+  margin: 0 auto 2rem auto;
+  color: #fff;
+}
+
+.midia-video-container {
+  max-width: 300px;
+
+  video {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #E79925;
+    padding: 5px;
+    background-color: transparent;
+    box-shadow: 0 0 25px rgba(231, 153, 37, 0.8);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .midia-container {
+    padding: 2rem 20px;
+  }
+
+  .midia-content {
+    flex-direction: column;
+  }
+
+  .midia-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .midia-right-text {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .midia-bottom {
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 3.2rem;
+
+    img {
+      transform: scale(1.2);
+    }
+  }
+
+  .guru-title {
+    max-width: 100%;
+    font-size: 24px;
+  }
+
+  .guru-text {
+    max-width: 100%;
+  }
+
+  .midia-video-container {
+    max-width: 80%;
+
+    video {
+      border-width: 2px;
+      object-fit: cover;
+    }
+  }
+
+  .midia-button {
+    padding: 1rem;
+    font-size: 0.7rem;
+  }
+}

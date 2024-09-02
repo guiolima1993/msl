@@ -1,0 +1,254 @@
+.tvSection {
+  padding: 4rem 0;
+}
+
+.headlineSmall {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.headlineLarge {
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto 4rem auto;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  gap: 40px;
+}
+
+.imageContainer {
+  flex: 1;
+
+  img {
+    width: 100%;
+    margin-bottom: -16rem;
+  }
+}
+
+.textContainer {
+  flex: 1;
+
+  .textsInfo {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+  }
+
+  .textsName {
+    font-size: 80px;
+    letter-spacing: 2px;
+    color: #fff;
+
+    .check {
+      max-width: 40px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .text {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-top: 15px;
+    letter-spacing: 1px;
+  }
+
+  .list {
+    margin: 4rem 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      gap: 20px;
+      border-bottom: 2px solid transparent;
+      border-image: linear-gradient(to right, #E79925, #000000) 1;
+      padding-bottom: 2rem;
+
+      .bgIcon {
+        background-color: #E79925;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        max-width: 70px;
+        max-height: 70px;
+        min-width: 70px;
+        min-height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+
+        img {
+          width: 100%;
+          max-width: 80%;
+          display: flex;
+          margin: 0 auto;
+          height: auto;
+        }
+      }
+
+      p {
+        color: #fff;
+        font-weight: 200;
+        letter-spacing: 1px;
+        margin: 0;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .colorYellow {
+    color: #E79925;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+
+  .colorWhite {
+    color: #fff;
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.subheadline {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 15px;
+  margin-top: 6rem;
+}
+
+.accordionItem {
+  margin: 0 auto 1rem auto;
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  background-color: #1E1E1E;
+  border-radius: 10px;
+}
+
+.accordionContent {
+  padding: 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #000;
+  max-width: 60%;
+  font-weight: 200;
+  line-height: 140%;
+  letter-spacing: 1px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #E79925;
+  border-radius: 50%;
+  color: #E79925;
+  font-size: 18px;
+  margin-left: 2rem;
+}
+
+@media (max-width: 800px) {
+  .tvSection {
+    padding-top: 0;
+  }
+
+  .headlineLarge {
+    font-size: 22px;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .image {
+    margin-bottom: -10rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .flexContainer {
+    flex-direction: column;
+  }
+
+  .subheadline {
+    font-size: 20px;
+  }
+
+  .accordionContent {
+    max-width: 100%;
+  }
+
+  .imageContainer {
+    img {
+      width: 100%;
+      margin-bottom: -8rem;
+    }
+  }
+
+  .textContainer {
+    .textsInfo {
+      font-size: 1.2rem;
+    }
+
+    .textsName {
+      font-size: 50px;
+
+      .check {
+        max-width: 30px;
+      }
+    }
+
+    .text {
+      font-size: 1rem;
+    }
+
+    .list {
+      li {
+        .bgIcon {
+          max-width: 40px !important;
+          max-height: 40px !important;
+          min-width: 40px !important;
+          min-height: 40px !important;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .colorYellow,
+    .colorWhite {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,210 @@
+.rememberSection {
+  background-color: #000;
+  background-size: 82%;
+  background-image: url('/image/gold-disc-fp.webp');
+  background-position: center center;
+  width: 100%;
+  background-repeat: no-repeat;
+  padding: 8rem 0;
+
+  .title {
+    font-size: 36px;
+    color: #fff;
+    margin: 0 auto 4rem auto;
+    text-align: center;
+    max-width: 27%;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 10rem 4rem;
+    margin: 0 auto;
+    background-color: #000;
+    border-radius: 20px;
+    border: .5px solid #191919;
+
+    h4 {
+      color: #fff;
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+    }
+
+    .list {
+      list-style: none;
+      max-width: 50%;
+      margin: 0 auto;
+
+      .listItem {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 1.5rem;
+
+        p {
+          color: #fff;
+          font-weight: 300;
+        }
+      }
+    }
+
+    .textPrice {
+      font-size: 1.7rem;
+      text-align: center;
+      line-height: 140%;
+      letter-spacing: 1px;
+      color: #fff;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .priceContent {
+      text-align: center;
+    }
+
+    .priceRisque {
+      background-color: #191919;
+      padding: 5px 20px;
+      border-radius: 4px;
+      letter-spacing: 1px;
+      font-size: 1.5rem;
+      color: #fff;
+
+      span {
+        position: relative;
+
+        &::after {
+          content: "";
+          width: 100%;
+          height: 1.5px;
+          background-color: red;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%) rotate(-4deg);
+        }
+      }
+    }
+
+    .priceText {
+      letter-spacing: 1px;
+      font-size: 1.5rem;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .price {
+      font-size: 3.4rem;
+      font-weight: bolder;
+      text-transform: uppercase;
+      color: #27AE61;
+      letter-spacing: 2px;
+      margin: 5px 0;
+    }
+  }
+
+  .rememberButton {
+    background-color: #00B84F;
+    color: white;
+    padding: 1.6rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 170%;
+
+    animation: zoom-in-zoom-out 2s ease-out infinite;
+
+    @keyframes zoom-in-zoom-out {
+      0% {
+        transform: scale(1, 1);
+      }
+      50% {
+        transform: scale(1.05, 1.05);
+      }
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+  }
+
+  .infos {
+    min-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .rememberSection {
+    padding: 0 0 2rem 0;
+    background-image: none;
+
+    .title {
+      font-size: 1.2rem;
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .content {
+      padding: 4rem 20px;
+      border-width: 2px;
+
+      h4 {
+        font-size: 1.2rem;
+      }
+
+      img {
+        width: 110%;
+        max-width: 110%;
+        display: flex;
+        margin: 0 auto;
+      }
+
+      .list {
+        max-width: 100%;
+
+        li {
+          img {
+            max-width: 30px;
+            margin: 0;
+          }
+        }
+      }
+
+      .textPrice {
+        font-size: 1.2rem;
+      }
+
+      .price {
+        font-size: 2.7rem;
+      }
+    }
+
+    .rememberButton {
+      padding: 1rem;
+      font-size: 0.7rem;
+    }
+
+    .infos {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+}

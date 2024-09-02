@@ -1,0 +1,7 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "@next/next/no-img-element": "off",  // Desativa o aviso sobre o uso da tag <img>
+    "react/no-unescaped-entities": "off"  // Desativa o aviso sobre caracteres não escapados como aspas
+  }
+}
