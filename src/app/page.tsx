@@ -44,7 +44,7 @@ export default function Home() {
   const guaranteeDescription1 = 'Você está amparado com a nossa garantia de 30 dias de resultado! Se você assistir todas as aulas do treinamento, colocar em prática o que eu te ensino lá, e não conseguir fazer pelo menos 200 reais…';
   const guaranteeDescription2 = 'Eu devolvo 100% do seu dinheiro… ou você fica 100% satisfeito, fazendo uma renda extra nesse mercado tão lucrativo e fértil… ou fica 100% satisfeito com seu dinheiro de volta!';
   const guaranteeSvgImageSrc = '/image/coin-guarantee.svg';
-  const guaranteeButtonLink = 'https://pay.hotmart.com/R94400471W';
+  const guaranteeButtonLink = 'https://pay.hotmart.com/R94400471W?checkoutMode=10';
   const guaranteeButtonText = 'SIM, QUERO TESTAR O MÉTODO POR 30 DIAS SEM RISCO';
   const guaranteebuttonIconSrc = '/image/infos-msl.png';
 
@@ -58,7 +58,7 @@ export default function Home() {
           videoEmbedCode={videoEmbedCode}
           headline={headlineHTML}
           subheadline={subheadlineHTML}
-          buttonLink="https://pay.hotmart.com/R94400471W"
+          buttonLink="https://pay.hotmart.com/R94400471W?checkoutMode=10"
         />
         <Midia
           leftImageSrc="/image/cash.png"
@@ -66,7 +66,7 @@ export default function Home() {
           rightText="Por mais de 8 anos, atuei neste mercado sozinho… revelando esta grande oportunidade apenas para pessoas próximas a mim… Minha família achou que eu estava louco em abandonar uma carreira de 7 anos como apresentador de TV para lavar sofás... meus amigos achavam que eu não iria conseguir, hoje os mesmos que criticavam, me admiram pelas minhas conquistas. Sem investir um real, usando apenas o que eu tinha em casa pra começar, esse foi o resultado que eu construí:"
           bottomLeftImageSrc="/image/midia-1.webp"
           bottomRightImageSrc="/image/midia-2.png"
-          buttonLink="https://pay.hotmart.com/R94400471W"
+          buttonLink="https://pay.hotmart.com/R94400471W?checkoutMode=10"
         />
       </div>
       <ListingSection
@@ -74,7 +74,7 @@ export default function Home() {
         description={textHTML}
         items={listItems}
         buttonText="SIM, QUERO TER ACESSO AO MÉTODO SOFÁ LUCRATIVO"
-        buttonLink="https://pay.hotmart.com/R94400471W"
+        buttonLink="https://pay.hotmart.com/R94400471W?checkoutMode=10"
         backgroundImageSrc="/image/bg-list.jpg"
       />
       <TitleWithLists
@@ -82,7 +82,7 @@ export default function Home() {
         buttonLink="https://example.com/acesso"
       />
       <RememberSection
-        buttonLink="https://pay.hotmart.com/R94400471W"
+        buttonLink="https://pay.hotmart.com/R94400471W?checkoutMode=10"
         buttonIconSrc="/image/infos-msl.png"
       />
        <GuaranteeSection
